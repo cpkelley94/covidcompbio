@@ -15,12 +15,17 @@ example, when you scroll through a webpage or make a PowerPoint presentation,
 you are engaging with the software graphically, clicking on links or dragging
 figures around the screen.
 
-> add info on terminal, UNIX, shell/bash
+However, another way to interact with the computer is through the _terminal_, or
+_command line_.  Here's an example of what that looks like:
+![terminal](images/000_terminal.png)
+Through text commands, the terminal allows you to navigate your files, write code,
+and run software, both on your computer and on external computing resources, like
+HiPerGator.
 
 ## How can I get to the terminal?
 This will depend on which operating system your computer is running:
   - **Windows:**
-  - **Mac:** Macs are natively based on a UNIX computing environment, so this is far more straightforward.  Just open up the `Terminal` app from the Launchpad (may be tucked away in the `Other` category).  If you want to get fancy, feel free to install other terminal apps such as `iTerm2`
+  - **Mac:** Macs are natively based on a UNIX computing environment, so this is far more straightforward.  Just open up the `Terminal` app from the Launchpad (may be tucked away in the `Other` category).  If you want to get fancy, feel free to install other terminal apps such as `iTerm2` or `hyper`, which offer some extra features like tabs and customization.
 
 ## What is a programming language?
 
