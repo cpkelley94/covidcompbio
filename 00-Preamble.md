@@ -15,9 +15,12 @@ example, when you scroll through a webpage or make a PowerPoint presentation,
 you are engaging with the software graphically, clicking on links or dragging
 figures around the screen.
 
+> add info on terminal, UNIX, shell/bash
+
 ## How can I get to the terminal?
 This will depend on which operating system your computer is running:
-  - **Mac:** Macs are natively based on a UNIX computing environment, so this is far more straightforward.  Just open up the `Terminal` app from the Launchpad (may be tucked away in the `Other` category).
+  - **Windows:**
+  - **Mac:** Macs are natively based on a UNIX computing environment, so this is far more straightforward.  Just open up the `Terminal` app from the Launchpad (may be tucked away in the `Other` category).  If you want to get fancy, feel free to install other terminal apps such as `iTerm2`
 
 ## What is a programming language?
 
