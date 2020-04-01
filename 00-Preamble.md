@@ -28,11 +28,13 @@ This will depend on which operating system your computer is running:
   - **Mac:** Macs are natively based on a UNIX computing environment, so this is far more straightforward.  Just open up the `Terminal` app from the Launchpad (may be tucked away in the `Other` category).  If you want to get fancy, feel free to install other terminal apps such as `iTerm2` or `hyper`, which offer some extra features like tabs and customization.
 
 ## What is a programming language?
-Within the terminal, you'll be running software or executing code that you or others have written to perform some task, like aligning sequencing reads to the genome or counting splicing isoforms from RNA-seq.  All software or code is written in a _programming language_, which is a set of words and rules that, when strung together, allow a person to write programs that computers can run.  There are many programming languages to choose from, including older languages like `C++`
+Within the terminal, you'll be running software or executing code that you or others have written to perform some task, like aligning sequencing reads to the genome or counting splicing isoforms from RNA-seq.  All software or code is written in a _programming language_, which is a set of words and rules that, when strung together, allow a person to write programs that computers can run.  There are many programming languages to choose from, such as C++, Java, R, and Python.
 
 Programming languages can be divided up into essentially two types:
-  1. **Compiled languages:**
+  1. **Compiled languages:** Code written in these languages (eg. C++, Java) is converted to machine code by the developers before it gets to the user.  These languages make code run more _efficiently_, but are often less human-readable and more complex to adapt to the particular needs of the user.  Much of the software that we use in sequencing analysis (eg. `HISAT2`) is written in these languages for efficiency.
   2. **Scripting languages:**
+
+However, although the grammar (syntax) can look very different between languages, many languages can be used to do the same things---each just has its own pro's and con's.
 
 ## Why are we using Python?
 
