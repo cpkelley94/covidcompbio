@@ -45,3 +45,12 @@ We chose to use Python in this course for the following reasons:
 Of course, other languages are useful as well (one example is R, which offers powerful statistical analysis), and many programmers will choose their programming language based on the task at hand.  However, we will be sticking to Python for this course, as it can be used for just about anything.
 
 ## How can we run Python code?
+There are multiple ways for you to run Python code that you've written.  Most of the time, you'll be writing your code in a script file (a text file with a `.py` file extension) and running Python from the terminal. For example, to run a file called `myscript.py`, you would open the terminal, move to the folder containing the script, type
+```bash
+python script.py
+```
+and press Enter.  In this case, the Python interpreter would run through your whole script to the end, line by line.
+
+Sometimes, rather than running an entire script, you might just want to run a couple of lines of code. For example, you might want to test out whether a line of code you wrote works as intended. For this, you can use a program called `IPython`, which allows you to test out lines of Python code in the terminal interactively.
+
+The edX courses use software called Jupyter, which is built from `IPython`.  With Jupyter, 
