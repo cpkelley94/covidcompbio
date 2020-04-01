@@ -49,8 +49,8 @@ There are multiple ways for you to run Python code that you've written.  Most of
 ```bash
 python script.py
 ```
-and press Enter.  In this case, the Python interpreter would run through your whole script to the end, line by line.
+and press Enter.  In this case, the Python interpreter would run through your whole script to the end, line by line, performing each command that you wrote in sequence.
 
 Sometimes, rather than running an entire script, you might just want to run a couple of lines of code. For example, you might want to test out whether a line of code you wrote works as intended. For this, you can use a program called `IPython`, which allows you to test out lines of Python code in the terminal interactively.
 
-The edX courses use software called Jupyter, which is built from `IPython`.  With Jupyter, 
+The edX courses use software called Jupyter, which is built from `IPython`.  With Jupyter, you can write and execute short code blocks, add notes using `Markdown` blocks, and save the whole page into a notebook for easy access down the road.  Jupyter notebooks are very useful, both for teaching Python as well as for making easy-to-use, illustrative versions of pipelines to share with other researchers.
