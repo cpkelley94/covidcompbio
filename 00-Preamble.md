@@ -47,7 +47,7 @@ Of course, other languages are useful as well (one example is R, which offers po
 ## How can we run Python code?
 There are multiple ways for you to run Python code that you've written.  Most of the time, you'll be writing your code in a script file (a text file with a `.py` file extension) and running Python from the terminal. For example, to run a file called `myscript.py`, you would open the terminal, move to the folder containing the script, type
 ```bash
-python script.py
+python myscript.py
 ```
 and press Enter.  In this case, the Python interpreter would run through your whole script to the end, line by line, performing each command that you wrote in sequence.
 
