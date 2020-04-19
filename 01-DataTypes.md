@@ -54,5 +54,10 @@ my_var += 2  # we can add 2 to my_var to make it 7
 my_var = "blue"  # now it's a string!
 ```
 
+Just because data types are _implicit_ in Python 
+doesn't mean they aren't important. For example, if 
+you try to run something like this,
+
+
 
 ## Data types reference
