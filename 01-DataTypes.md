@@ -81,6 +81,7 @@ only the kind of information contained in a variable,
 but also how you use it, the methods available 
 to it, and how it interacts with other variables. 
 
+
 ## Data types reference sheet
 
 Different data types have different use cases, 
@@ -90,5 +91,6 @@ provide a reference for some of the most common
 data types in biological data analysis, and we'll 
 go over when they are best to use.
 
-### Python core data types
+### Python built-in types
 
+- **Integer** (`int`):
