@@ -38,7 +38,21 @@ Python, the type identifier is omitted for simplicity:
 num = 5
 ```
 
+Also, since Python is a scripting language, it can do 
+something called **dynamic memory allocation**: rather 
+than having to block off memory in the computer before 
+the program runs, Python can grab the memory it needs 
+as it progresses through your script. Different 
+data types require different amounts of space in memory; however, 
+since Python allocates memory dynamically, we are free 
+to change the type of a variable whenever we want. For 
+example,
 
+```python
+my_var = 5  # my_var is declared as an integer
+my_var += 2  # we can add 2 to my_var to make it 7
+my_var = "blue"  # now it's a string!
+```
 
 
 ## Data types reference
