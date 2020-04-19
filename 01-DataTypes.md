@@ -27,7 +27,7 @@ int num = 5;
 ```
 
 In C++, we have to tell the compiler what type the 
-variable is before we can use it, and we do that with 
+variable is before we can use it, and we do that here with 
 the `int` keyword. The developers of Python saw this 
 code structure as redundant: we already know that 
 `num` is an integer because we are giving it the value 
