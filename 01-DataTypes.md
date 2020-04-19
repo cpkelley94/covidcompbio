@@ -93,4 +93,7 @@ go over when they are best to use.
 
 ### Python built-in types
 
-- **Integer** (`int`):
+- **Integer** (`int`): any whole number, including positive and negative numbers (eg. 5, 0, -107). Integers are commonly used for counting, indexing iterable types like lists (eg. `my_list[1]`), and iterating through indices in a `for` loop using `range()`.
+  - Example declaration: `var = 2`
+  
+
