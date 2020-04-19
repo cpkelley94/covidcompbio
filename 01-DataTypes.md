@@ -80,6 +80,9 @@ doesn't know what to do! Data types define not
 only the kind of information contained in a variable, 
 but also how you use it, the methods available 
 to it, and how it interacts with other variables. 
+Mastering the most common types will allow you 
+to work efficiently with any kind of data that 
+you will come across in your projects.
 
 
 ## Data types reference sheet
