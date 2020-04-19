@@ -134,4 +134,6 @@ go over when they are best to use.
 
 - **NumPy array (`numpy.ndarray`):**
 
-- **Pandas DataFrame (`pandas.DataFrame`):**
+- **pandas DataFrame (`pandas.DataFrame`):**
+
+- **BioPython Seq (`Bio.Seq`)
