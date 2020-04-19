@@ -96,4 +96,6 @@ go over when they are best to use.
 - **Integer** (`int`): any whole number, including positive and negative numbers (eg. 5, 0, -107). Integers are commonly used for counting, indexing iterable types like lists (eg. `my_list[1]`), and iterating through indices in a `for` loop using `range()`. Unlike most programming languages, Python does not place a limit on the largest possible integer.
   - Example declaration: `var = 2`
   
-- **Floating point** (`float`): a decimal number (eg. 1.1, 3.14159265, 2.998e8). Floats are the basic data type for storing decimal numeric data, like physical measurements, 
+- **Floating-point** (`float`): a decimal number (eg. 1.1, 3.14159265, 2.998e8). Floats are the basic data type for storing decimal numeric data, like physical measurements, ratios, and distances. In Python 3, fractions of integers automatically evaluate to floats (eg. 3/7 becomes 0.42857142857142855). Floats in Python store 53 bits of information, or approximately 16 significant digits for numbers in base 10.
+  - Example declaration: `var = 1.1`
+  - **Warning**: Computers fundamentally store information using binary representation (0's and 1's), not in the base 10 that we work with, and this can cause some funny behaviors if you don't structure your code carefully. 
