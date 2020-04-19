@@ -129,3 +129,9 @@ go over when they are best to use.
 - **Set (`set`):**
 
 - **Dictionary (`dict`):**
+
+### External data types
+
+- **NumPy array (`numpy.ndarray`):**
+
+- **Pandas DataFrame (`pandas.DataFrame`):**
