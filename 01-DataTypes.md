@@ -6,7 +6,7 @@ some of the most useful **data types** in Python,
 including _integers_, _floats_, and _strings_. Data 
 types are a core component of any programming 
 language, allowing you to store and manipulate many 
-different kinds of data, like numbers, words, and 
+different kinds of information, like numbers, words, and 
 lists. Here, we'll discuss how data types are 
 implemented in Python and provide a reference for 
 some of the most useful data types for biological 
@@ -86,9 +86,13 @@ to it, and how it interacts with other variables.
 
 Different data types have different use cases, 
 and some are more efficient than others for 
-specific operations. In this section, we'll 
+specific operations. In addition, while Python 
+itself has many data types that are broadly useful, 
+external libraries also can provide their own data 
+types that add extra functionality and efficiency 
+for specific types of analysis. In this section, we'll 
 provide a reference for some of the most common 
-data types in biological data analysis, and we'll 
+data types in computational biology, and we'll 
 go over when they are best to use.
 
 ### Python built-in types
