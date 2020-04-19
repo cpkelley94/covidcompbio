@@ -80,11 +80,15 @@ doesn't know what to do! Data types define not
 only the kind of information contained in a variable, 
 but also how you use it, the methods available 
 to it, and how it interacts with other variables. 
+
+## Data types reference sheet
+
 Different data types have different use cases, 
 and some are more efficient than others for 
-specific operations. In the next section, we'll 
+specific operations. In this section, we'll 
 provide a reference for some of the most common 
 data types in biological data analysis, and we'll 
 go over when they are best to use.
 
-## Data types reference
+### Python core data types
+
