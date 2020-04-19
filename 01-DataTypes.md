@@ -130,6 +130,8 @@ go over when they are best to use.
 
 - **Dictionary (`dict`):**
 
+- **NoneType (`NoneType`):**
+
 ### External data types
 
 - **NumPy array (`numpy.ndarray`):**
