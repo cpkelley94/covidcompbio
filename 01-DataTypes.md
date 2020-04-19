@@ -93,6 +93,11 @@ go over when they are best to use.
 
 ### Python built-in types
 
+- **Boolean** (`bool`): either `True` or `False`. This is the simplest data type, with only two possible values. Booleans are the foundation of programming logic: for example, booleans allow the computer to decide if code in an `if` block should be run, or if a `while` loop should end. Any comparison we perform (such as `my_int < 5`) will give either `True` or `False`, allowing us to run some code only when a condition is met, or run other code when it is not.
+  - Example declaration: `var = True`
+  - Booleans are also useful as _flags_ that we can set in response to something in our data and retrieve later. For example, if we want to include a line in our output file about _TARDBP_ read counts only if our data has at least one read that maps to that gene, we might make a boolean variable called `data_has_TARDBP` to keep track of this. We could initialize it as `data_has_TARDBP = False` and then flip it to `True` if we detect a _TARDBP_ read at any point in our data analysis. At the end of the script, we would then check if this flag is `True` using `if`, and modify our output accordingly.
+  - To check if a boolean variable (eg. `my_bool`) is True, simply write `if my_bool:`. To check if it's False, use the `not` keyword (`if not my_bool:`).
+
 - **Integer** (`int`): any whole number, including positive and negative numbers (eg. 5, 0, -107). Integers are commonly used for counting, indexing iterable types like lists (eg. `my_list[1]`), and iterating through indices in a `for` loop using `range()`. Unlike most programming languages, Python does not place a limit on the largest possible integer.
   - Example declaration: `var = 2`
   
@@ -102,10 +107,12 @@ go over when they are best to use.
   - In order to create very large or very small numbers, you can also use scientific notation to declare floats. To do this, place an `e` in between the decimal number and the exponent (eg. `5.4e10`).
   - **Warning**: Computers fundamentally store information using binary representation (0's and 1's), not in the base 10 that we humans work with, and this can cause some funny behavior if we don't structure our code carefully. For example, if we add the float `0.001` to a variable `var` 1000 times using a `for` loop, the variable's value after the loop evaluates to `1.0000000000000007`, rather than exactly 1. This is because the binary representation of the number `0.001` that the computer creates is only a high-precision approximation, and the error quickly becomes visible after only a small number of mathematical operations. In your code, if our goal is to check if `var` is equal to 1, you probably won't get the outcome you expect. Instead, we should check if `var` is _extremely close_ to 1, using something like `if abs(var - 1.0) < 1E-8:`. This type of comparison is also implemented in external libraries, including `math` (eg. `math.isclose()`).
 
-- **String** (`str`): an ordered collection of characters (eg. "this is a string"). Strings are the fundamental type for storing text data, including letters, words, phrases, and sentences, as well as sequencing reads, sequence alignment information (eg. CIGAR strings), file paths.
+- **String** (`str`): an ordered collection of characters (eg. `"this is a string"`). Strings are the fundamental type for storing text data, including letters, words, phrases, and sentences, as well as sequencing reads, sequence alignment information (eg. CIGAR strings), and file paths.
   - Example declaration: `var = "blue"`
   - Characters in a string can be retrieved with an index (eg. `my_string[0]` returns the first character in the string).
   - Substrings can be retrieved by _slicing_ (eg. `my_string[0:3]` returns the first three characters in the string).
   - Strings can be _concatenated_ by adding them (eg. `'a' + 'b'` returns `'ab'`).
   - In Python, strings can be declared using either single quotes (`'blue'`) or double quotes (`"blue"`). For example, if we want to store the sentence "It's a wonderful life!" as a string, we can enclose the string in double quotes to avoid problems with the apostrophe.
   - If you need to use a character in a string that messes with the string declaration (eg. both single and double quotes in a single string), you can _escape_ the problematic character by preceding it with a backslash `\`.
+  
+- **List** (`list`): an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`).
