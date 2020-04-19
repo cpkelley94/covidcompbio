@@ -20,7 +20,7 @@ Python may not be obvious. In many other programming
 languages, such as C++, data types are _explicitly_ 
 defined when you declare a variable. For example, if 
 we want to make a new variable `num` to hold the 
-number 5, we would write
+integer number 5, we would write
 
 ```c++
 int num = 5;
