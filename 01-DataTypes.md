@@ -58,6 +58,33 @@ Just because data types are _implicit_ in Python
 doesn't mean they aren't important. For example, if 
 you try to run something like this,
 
+```python
+my_int = 5
+my_string = "blue"
+print(my_int + my_string)
+```
 
+you'll get the following error:
+
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-3-adf924bcdbe7> in <module>()
+----> 1 print(my_int + my_string)
+
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+
+If you try to add a string to an integer, Python 
+doesnt' know what to do! Data types define not 
+only the type of data contained in a variable, 
+but also how you use it, the methods available 
+to it, and how it interacts with other variables. 
+Different data types have different use cases, 
+and some are more efficient than others for 
+specific operations. In the next section, we'll 
+provide a reference for some of the most common 
+data types in biological data analysis, and we'll 
+go over when they are best to use.
 
 ## Data types reference
