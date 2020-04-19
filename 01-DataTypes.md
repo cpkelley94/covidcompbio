@@ -112,7 +112,7 @@ go over when they are best to use.
   - Example declaration: `var = 1.1`
   - In Python 3, fractions of integers automatically evaluate to floats (eg. 3/7 becomes 0.42857142857142855).
   - In order to create very large or very small numbers, you can also use scientific notation to declare floats. To do this, place an `e` in between the decimal number and the exponent (eg. `5.4e10`).
-  - **Warning**: Computers fundamentally store information using binary representation (0's and 1's), not in the base 10 that we humans work with, and this can cause some funny behavior if we don't structure our code carefully. For example, if we add the float `0.001` to a variable `var` 1000 times using a `for` loop, the variable's value after the loop evaluates to `1.0000000000000007`, rather than exactly 1. This is because the binary representation of the number `0.001` that the computer creates is only a high-precision approximation, and the error quickly becomes visible after only a small number of mathematical operations. In your code, if our goal is to check if `var` is equal to 1, you probably won't get the outcome you expect. Instead, we should check if `var` is _extremely close_ to 1, using something like `if abs(var - 1.0) < 1E-8:`. This type of comparison is also implemented in external libraries, including `math` (eg. `math.isclose()`).
+  - **Warning**: Computers fundamentally store information using binary representation (0's and 1's), not in the base 10 that we humans work with, and this can cause some funny behavior if we don't structure our code carefully. For example, if we add the float `0.001` to a variable `var` 1000 times using a `for` loop, the variable's value after the loop completes is `1.0000000000000007`, rather than exactly 1. This is because the binary representation of the number `0.001` that the computer creates is only a high-precision approximation, and the error quickly becomes visible after only a small number of mathematical operations. In our code, if our goal is to check if `var` is equal to 1, we probably won't get the outcome we expect. Instead, we should check if `var` is _extremely close_ to 1, using something like `if abs(var - 1.0) < 1E-8:`. This type of comparison is also implemented in external libraries, including `math` (eg. `math.isclose()`).
 
 - **String (`str`):** an ordered collection of characters (eg. `"this is a string"`). Strings are the fundamental type for storing text data, including letters, words, phrases, and sentences, as well as sequencing reads, sequence alignment information (eg. CIGAR strings), and file paths.
   - Example declaration: `var = "blue"`
@@ -123,3 +123,9 @@ go over when they are best to use.
   - If you need to use a character in a string that messes with the string declaration (eg. both single and double quotes in a single string), you can _escape_ the problematic character by preceding it with a backslash `\`.
   
 - **List (`list`):** an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`).
+
+- **Tuple (`tuple`):**
+
+- **Set (`set`):**
+
+- **Dictionary (`dict`):**
