@@ -136,4 +136,4 @@ go over when they are best to use.
 
 - **pandas DataFrame (`pandas.DataFrame`):**
 
-- **BioPython Seq (`Bio.Seq`)
+- **BioPython Seq (`Bio.Seq`):**
