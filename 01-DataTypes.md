@@ -76,7 +76,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
 If you try to add a string to an integer, Python 
-doesnt' know what to do! Data types define not 
+doesn't know what to do! Data types define not 
 only the type of data contained in a variable, 
 but also how you use it, the methods available 
 to it, and how it interacts with other variables. 
