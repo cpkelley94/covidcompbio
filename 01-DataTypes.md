@@ -139,7 +139,7 @@ go over when they are best to use.
     ```python
     my_list = [2*i+1 for i in range(10)]  # also [1, 3, 5, 7, ...]
     ```
-    This makes the code both more concise and easier to read. List comprehensions can get even more powerful: you can even work in `if` conditionals and multiple `for` loops. If you want to learn more about this, check out [this resource](https://realpython.com/list-comprehension-python).
+    This makes the code both more concise and easier to read (at least once you've seen it enough times!). List comprehensions can get even more powerful: you can even work in `if` conditionals and multiple `for` loops. If you want to learn more about this, check out [this resource](https://realpython.com/list-comprehension-python).
 
 - **Tuple (`tuple`):** an _immutable_ ordered collection of items. Tuples function similarly to lists, except once declared, the items of a tuple can't be changed. Many functions return tuples in order to return multiple values at the same time: for example, the curve-fitting function `scipy.optimize.curve_fit()` returns the tuple `(popt, pcov)` to provide both the fitting parameters and their covariance matrix.
   - Example declaration: `my_tup = (1, 2, 3)` (enclose the list in _parentheses_, and separate items with a comma)
