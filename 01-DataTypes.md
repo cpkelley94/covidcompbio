@@ -116,11 +116,13 @@ go over when they are best to use.
 
 - **String (`str`):** an ordered collection of characters (eg. `"this is a string"`). Strings are the fundamental type for storing text data, including letters, words, phrases, and sentences, as well as sequencing reads, sequence alignment information (eg. CIGAR strings), and file paths.
   - Example declaration: `var = "blue"`
+  - In Python, strings can be declared using either single quotes (`'blue'`) or double quotes (`"blue"`). For example, if we want to store the sentence "It's a wonderful life!" as a string, we can enclose the string in double quotes to avoid problems with the apostrophe.
+  - If you need to use a character in a string that messes with the string declaration (eg. both single and double quotes in a single string), you can _escape_ the problematic character by preceding it with a backslash `\`.
   - Characters in a string can be retrieved with an index (eg. `my_string[0]` returns the first character in the string).
   - Substrings can be retrieved by _slicing_ (eg. `my_string[0:3]` returns the first three characters in the string).
   - Strings can be _concatenated_ by adding them (eg. `'a' + 'b'` returns `'ab'`).
-  - In Python, strings can be declared using either single quotes (`'blue'`) or double quotes (`"blue"`). For example, if we want to store the sentence "It's a wonderful life!" as a string, we can enclose the string in double quotes to avoid problems with the apostrophe.
-  - If you need to use a character in a string that messes with the string declaration (eg. both single and double quotes in a single string), you can _escape_ the problematic character by preceding it with a backslash `\`.
+  - In Python, strings are _immutable_ objects, meaning that they cannot be changed once they are created. This means that if we try to change the value of a character in a string by indexing (eg. `my_string[0] = "A"`), Python will throw an error. We can often get around this, however, by redefining an existing string variable with a new string (eg. to change the first letter of `my_string` to A, we can write `my_string = "A" + mystring[1:]`.
+ 
   
 - **List (`list`):** an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`).
 
