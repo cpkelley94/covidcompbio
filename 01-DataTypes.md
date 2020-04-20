@@ -168,7 +168,7 @@ go over when they are best to use.
   color = kitchen_colors['spatula']  # 'black'
   ```
   Dictionaries are a highly flexible way to store heterogenous data for quick access. However, they do not store any information about order.
-  - Example declaration: `my_dict = {"fruit":"strawberry", "color":"red", "flavor":"sweet", "count":56}
+  - Example declaration: `my_dict = {"fruit":"strawberry", "color":"red", "flavor":"sweet", "count":56}`
   - Dictionaries are organized as key-value pairs, where the key is used to look up the value. You can think of this as similar to a real-world dictionary, where the word is the key and the definition is the value.
   - In Python, dictionary values can be any type, including lists and dictionaries!
   - If we want to iterate over a dictionary, we can do it in multiple ways. We can iterate over its keys using the `.keys()` method, its values using `.values()`, or its key-value pairs (as a tuple) using `.items()`. Keep in mind that these aren't going to be in any particular order.
