@@ -130,16 +130,16 @@ go over when they are best to use.
   - Additionally, unlike strings, lists are _mutable_, meaning we can change the items whenever we want. For example, I can change the first element of `my_list` to 5 by indexing (eg. `my_list[0] = 5`).
   - We can also change the length of the list at any time. We can add an element to the end using the `.append()` method (eg. `my_list.append("a new value")`, insert an element at any position using `.insert()`, and remove an element using `.pop()` or `.remove()`.
   - One common method to produce a list is to start with an empty list and append items into it one-by-one. For example,
-  ```python
-  my_list = []
-  for i in range(10):
-      my_list.append(2*i+1)  # [1, 3, 5, 7, ...]
-  ```
-  The developers of Python saw an opportunity to make this code simpler, so they created a syntax called **list comprehension**. This structure allows you to create and populate a new list in a single line of code by embedding the `for` loop inside the list declaration, like this:
-  ```python
-  my_list = [2*i+1 for i in range(10)]
-  ```
-  This makes the code both more concise and easier to read. List comprehensions can get even more powerful: you can even work in `if` conditionals and multiple `for` loops. If you want to learn more about this, check out [this resource](https://realpython.com/list-comprehension-python).
+    ```python
+    my_list = []
+    for i in range(10):
+        my_list.append(2*i+1)  # [1, 3, 5, 7, ...]
+    ```
+    The developers of Python saw an opportunity to make this code simpler, so they created a syntax called **list comprehension**. This structure allows you to create and populate a new list in a single line of code by embedding the `for` loop inside the list declaration, like this:
+    ```python
+    my_list = [2*i+1 for i in range(10)]
+    ```
+    This makes the code both more concise and easier to read. List comprehensions can get even more powerful: you can even work in `if` conditionals and multiple `for` loops. If you want to learn more about this, check out [this resource](https://realpython.com/list-comprehension-python).
   
   
 
