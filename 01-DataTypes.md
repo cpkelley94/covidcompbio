@@ -125,7 +125,7 @@ go over when they are best to use.
   - In Python, strings are _immutable_ objects, meaning that they cannot be changed once they are created. This means that if we try to change the value of a character in a string by indexing (eg. `my_string[0] = "A"`), Python will throw an error. We can often get around this, however, by redefining an existing string variable with new data. For example, to change the first letter of `my_string` to A, we can write `my_string = "A" + mystring[1:]`.
   
 - **List (`list`):** an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`). Lists are a very convenient data type to store ordered sequences, such as the lines in a text file, sequencing reads, gene names, measurements, read counts, RGB color values&mdash;pretty much anything you can think of! Items in a list don't even have to be the same type. Lists are the fundamental _iterable_ type in Python, meaning we can run through each of its items with a `for` loop and perform some operations on each item in sequence. However, with this convenience comes relative inefficiency in both memory usage and time: for processing large and/or multidimensional data, like 3D microscopy images or large sequencing datasets, lists often don't make the cut.
-  - Example declaration: `my_list = [0, 1, 2, 3]` (enclose the list in square brackets, and separate items with a comma)
+  - Example declaration: `my_list = [0, 1, 2, 3]` (enclose the list in _square brackets_, and separate items with a comma)
   - Lists can be _indexed_, _sliced_, and _concatenated_ just like strings, with exactly the same syntax.
   - Additionally, unlike strings, lists are _mutable_, meaning we can change the items whenever we want. For example, I can change the first element of `my_list` to 5 by indexing (eg. `my_list[0] = 5`).
   - We can also change the length of the list at any time. We can add an element to the end using the `.append()` method (eg. `my_list.append("a new value")`, insert an element at any position using `.insert()`, and remove an element using `.pop()` or `.remove()`.
@@ -137,13 +137,12 @@ go over when they are best to use.
     ```
     The developers of Python saw an opportunity to make this code simpler, so they created a syntax called **list comprehension**. This structure allows you to create and populate a new list in a single line of code by embedding the `for` loop inside the list declaration, like this:
     ```python
-    my_list = [2*i+1 for i in range(10)]
+    my_list = [2*i+1 for i in range(10)]  # also [1, 3, 5, 7, ...]
     ```
     This makes the code both more concise and easier to read. List comprehensions can get even more powerful: you can even work in `if` conditionals and multiple `for` loops. If you want to learn more about this, check out [this resource](https://realpython.com/list-comprehension-python).
-  
-  
 
-- **Tuple (`tuple`):**
+- **Tuple (`tuple`):** an _immutable_ ordered collection of items. Tuples function similarly to lists, except once declared, the items of a tuple can't be changed. Many functions return tuples in order to return multiple values at the same time: for example, the curve-fitting function `scipy.optimize.curve_fit()` returns the tuple `(popt, pcov)` to provide both the fitting parameters and their covariance matrix.
+  - Example declaration: `my_tup = (1, 2, 3)` (enclose the list in _parentheses_, and separate items with a comma)
 
 - **Set (`set`):**
 
