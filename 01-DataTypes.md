@@ -101,21 +101,21 @@ go over when they are best to use.
 ### Python built-in types
 
 - **Boolean (`bool`):** either `True` or `False`. This is the simplest data type, with only two possible values. Booleans are the foundation of programming logic: for example, booleans allow the computer to decide if code in an `if` block should be run, or if a `while` loop should end. Any comparison we perform (such as `my_int < 5`) will give either `True` or `False`, allowing us to run some code only when a condition is met, or run other code when it is not.
-  - Example declaration: `var = True`
+  - Example declaration: `my_bool = True`
   - Booleans are also useful as _flags_ that we can set in response to something in our data to be retrieved later. For example, if we want to include a line in our output file about _TARDBP_ read counts only if our data has at least one read that maps to that gene, we might make a boolean variable called `data_has_TARDBP` to keep track of this. We could initialize it as `data_has_TARDBP = False` and then flip it to `True` if we detect a _TARDBP_ read at any point in our data analysis. At the end of the script, we would then check if this flag is `True` using `if`, and modify our output accordingly.
   - To check if a boolean variable (eg. `my_bool`) is True, simply write `if my_bool:`. To check if it's False, use the `not` keyword (`if not my_bool:`).
 
 - **Integer (`int`):** any whole number, including positive and negative numbers (eg. 5, 0, -107). Integers are commonly used for counting, indexing iterable types like lists (eg. `my_list[1]`), and iterating through indices in a `for` loop using `range()`. Unlike most programming languages, Python does not place a limit on the largest possible integer.
-  - Example declaration: `var = 2`
+  - Example declaration: `my_int = 2`
   
 - **Floating-point (`float`):** a decimal number (eg. 1.1, 3.14159265, 2.998e8). Floats are the basic data type for storing decimal numeric data, like physical measurements, ratios, and distances. Floats in Python store 53 bits of information, or approximately 16 significant digits of precision.
-  - Example declaration: `var = 1.1`
+  - Example declaration: `my_float = 1.1`
   - In Python 3, fractions of integers automatically evaluate to floats (eg. 3/7 becomes 0.42857142857142855).
   - In order to create very large or very small numbers, you can also use scientific notation to declare floats. To do this, place an `e` in between the decimal number and the exponent (eg. `5.4e10`).
   - **Warning**: Computers fundamentally store information using binary representation (0's and 1's), not in the base 10 that we humans work with, and this can cause some funny behavior if we don't structure our code carefully. For example, if we add the float `0.001` to a variable `var` 1000 times using a `for` loop, the variable's value after the loop completes is `1.0000000000000007`, rather than exactly 1. This is because the binary representation of the number `0.001` that the computer creates is only a high-precision approximation, and the error quickly becomes visible after only a small number of mathematical operations. In our code, if our goal is to check if `var` is equal to 1, we probably won't get the outcome we expect. Instead, we should check if `var` is _extremely close_ to 1, using something like `if abs(var - 1.0) < 1E-8:`. This type of comparison is also implemented in external libraries, including `math` (eg. `math.isclose()`).
 
 - **String (`str`):** an ordered collection of characters (eg. `"this is a string"`). Strings are the fundamental type for storing text data, including letters, words, phrases, and sentences, as well as sequencing reads, sequence alignment information (eg. CIGAR strings), and file paths.
-  - Example declaration: `var = "blue"`
+  - Example declaration: `my_string = "blue"`
   - In Python, strings can be declared using either single quotes (`'blue'`) or double quotes (`"blue"`). For example, if we want to store the sentence "It's a wonderful life!" as a string, we can enclose the string in double quotes to avoid problems with the apostrophe.
   - If you need to use a character in a string that messes with the string declaration (eg. both single and double quotes in a single string), you can _escape_ the problematic character by preceding it with a backslash `\`.
   - Characters in a string can be retrieved with an index (eg. `my_string[0]` returns the first character in the string).
@@ -123,12 +123,13 @@ go over when they are best to use.
   - Strings can be _concatenated_ by adding them (eg. `'a' + 'b'` returns `'ab'`).
   - In Python, strings are _immutable_ objects, meaning that they cannot be changed once they are created. This means that if we try to change the value of a character in a string by indexing (eg. `my_string[0] = "A"`), Python will throw an error. We can often get around this, however, by redefining an existing string variable with new data. For example, to change the first letter of `my_string` to A, we can write `my_string = "A" + mystring[1:]`.
   
-- **List (`list`):** an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`). Lists are a very convenient data type to store ordered sequences, such as the lines in a text file, sequencing reads (as strings), gene names, measurements, read counts, RGB color values, 
-  - Example declaration: `var = [0, 1, 2, 3]`
-  - indexing, slicing, concatenating
-  - append, insert, extend
+- **List (`list`):** an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`). Lists are a very convenient data type to store ordered sequences, such as the lines in a text file, sequencing reads (as strings), gene names, measurements, read counts, RGB color values-- pretty much anything you can think of! Items in a list don't even have to be the same type. Lists are the fundamental _iterable_ type in Python, meaning we can run through each of its items with a `for` loop and perform some operations on each item in sequence. However, with this convenience comes relative inefficiency in both memory usage and time--for processing large and/or multidimensional data, like 3D microscopy images or large sequencing datasets, lists often don't make the cut.
+  - Example declaration: `my_list = [0, 1, 2, 3]` (enclose the list in square brackets, and separate items with a comma)
+  - Lists can be _indexed_, _sliced_, and _concatenated_ just like strings, with exactly the same syntax.
+  - Additionally, unlike strings, lists are _mutable_, meaning we can change the items whenever we want. For example, I can change the first element of `my_list` to 
   - List comprehension:
   - mutable
+  - append, insert, extend
   
   
 
