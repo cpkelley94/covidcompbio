@@ -117,7 +117,8 @@ go over when they are best to use.
 - **String (`str`):** an ordered collection of characters (eg. `"this is a string"`). Strings are the fundamental type for storing text data, including letters, words, phrases, and sentences, as well as sequencing reads, sequence alignment information (eg. CIGAR strings), and file paths.
   - Example declaration: `my_string = "blue"`
   - In Python, strings can be declared using either single quotes (`'blue'`) or double quotes (`"blue"`). For example, if we want to store the sentence "It's a wonderful life!" as a string, we can enclose the string in double quotes to avoid problems with the apostrophe.
-  - If you need to use a character in a string that messes with the string declaration (eg. both single and double quotes in a single string), you can _escape_ the problematic character by preceding it with a backslash `\`.
+  - If we need to use a character in a string that messes with the string declaration (eg. both single and double quotes in a single string), we can _escape_ the problematic character by preceding it with a backslash `\`.
+  - Basically any character we can type on a keyboard, as well as many other special characters (eg. symbols, tabs, newlines, Unicode), can exist in a string. Newlines (a "character" that tells the computer to start writing text on the next line) are represented by `\n`, and tabs are represented by `\t`.
   - Characters in a string can be retrieved with an index (eg. `my_string[0]` returns the first character in the string).
   - Substrings can be retrieved by _slicing_ (eg. `my_string[0:3]` returns the first three characters in the string).
   - Strings can be _concatenated_ by adding them (eg. `'a' + 'b'` returns `'ab'`).
