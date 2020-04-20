@@ -169,7 +169,7 @@ go over when they are best to use.
   ```
   Dictionaries are a highly flexible way to store heterogenous data for quick access. However, they do not store any information about order.
   - Example declaration: `my_dict = {"fruit":"strawberry", "color":"red", "flavor":"sweet", "count":56}` (enclose the dictionary in _curly brackets_, with keys and values separated by a colon and pairs separated by commas)
-  - Dictionaries are organized as key-value pairs, where the key is used to look up the value. You can think of this as similar to a real-world dictionary, where the word is the key and the definition is the value.
+  - Dictionaries are organized as key-value pairs, where the key is used to look up the value. We can think of this as similar to a real-world dictionary, where the word is the key and the definition is the value.
   - In Python, dictionary values can be any type, including lists and dictionaries!
   - If we want to iterate over a dictionary, we can do it in multiple ways. We can iterate over its keys using the `.keys()` method, its values using `.values()`, or its key-value pairs (as a tuple) using `.items()`. Keep in mind that these aren't going to be in any particular order.
   
@@ -178,7 +178,7 @@ go over when they are best to use.
   - We can check if a variable `var` is `None` using `if var is None`.
 
 ### External data types
-While Python provides many broadly useful types (including some not mentioned above), certain analyses require specially designed data types that provide additional functionality or streamline efficiency of data processing. Here, we describe just a few of the many useful data types provided in external Python packages.
+While Python provides many broadly useful types (including some not mentioned above), certain analyses require specially designed data types that provide additional functionality or streamline efficiency of data processing. Here, we describe just a few of the many data types provided in external Python packages.
 
 - **NumPy array (`numpy.ndarray`):** an ordered _n_-dimensional array of values with the same type. Requires `numpy`. NumPy arrays have a couple more restrictions on their use than lists (eg. all items in the array must have the same type); however, these restrictions greatly boost their efficiency, allowing us to process very large amounts of data quickly and with less memory usage. Additionally, arrays can be multidimensional (eg. 2D, 3D, ...), making them the perfect data type to represent microscopy images. Together with the rest of the `numpy` and `scipy` packages, arrays enable fast matrix operations, including matrix multiplication, filtering, thresholding, deconvolution, etc. Check out the [documentation](https://numpy.org/doc/stable/reference/arrays.html) if you want to learn more.
 
