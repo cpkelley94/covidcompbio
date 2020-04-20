@@ -180,8 +180,8 @@ go over when they are best to use.
 ### External data types
 While Python provides many broadly useful types (including some not mentioned above), certain analyses require specially designed data types, providing additional functionality or streamlining efficiency of data processing. Here, we describe just a few of the many useful data types provided in external Python packages.
 
-- **NumPy array (`numpy.ndarray`):** an ordered n-dimensional array of values with the same type. Requires `numpy`.
+- **NumPy array (`numpy.ndarray`):** an ordered _n_-dimensional array of values with the same type. Requires `numpy`. NumPy arrays have a couple more restrictions on their use than lists (eg. all items in the array must have the same type); however, these restrictions greatly boost their efficiency, allowing us to process very large amounts of data quickly and with less memory usage. Additionally, arrays can be multidimensional (eg. 2D, 3D, ...), making them the perfect data type to represent microscopy images. Together with the rest of the `numpy` and `scipy` packages, arrays enable fast matrix operations, including matrix multiplication, filtering, thresholding, deconvolution, etc. Check out the [documentation](https://numpy.org/doc/stable/reference/arrays.html) if you want to learn more.
 
-- **pandas DataFrame (`pandas.DataFrame`):**
+- **pandas DataFrame (`pandas.DataFrame`):** 
 
 - **BioPython Seq (`Bio.Seq`):**
