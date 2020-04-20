@@ -173,7 +173,9 @@ go over when they are best to use.
   - In Python, dictionary values can be any type, including lists and dictionaries!
   - If we want to iterate over a dictionary, we can do it in multiple ways. We can iterate over its keys using the `.keys()` method, its values using `.values()`, or its key-value pairs (as a tuple) using `.items()`. Keep in mind that these aren't going to be in any particular order.
   
-- **NoneType (`NoneType`):**
+- **NoneType (`NoneType`):** the type of Python's null object `None`. We don't really need to worry much about this, but we do need to be aware that it exists. `None` is the object Python gives variables that have _no value_. This can come up in some corner cases: for example, if our code relies on user input and the user fails to provide any input, our input-catching variable may end up with the value `None`. Also, functions that do not return anything (eg. in-place methods like `list.append()` or `list.sort()`) automatically return `None`.
+  - We can't make any variables with the type `NoneType`. This type is reserved for `None` only.
+  - We can check if a variable `var` is `None` using `if var is None`.
 
 ### External data types
 
