@@ -182,6 +182,6 @@ While Python provides many broadly useful types (including some not mentioned ab
 
 - **NumPy array (`numpy.ndarray`):** an ordered _n_-dimensional array of values with the same type. Requires `numpy`. NumPy arrays have a couple more restrictions on their use than lists (eg. all items in the array must have the same type); however, these restrictions greatly boost their efficiency, allowing us to process very large amounts of data quickly and with less memory usage. Additionally, arrays can be multidimensional (eg. 2D, 3D, ...), making them the perfect data type to represent microscopy images. Together with the rest of the `numpy` and `scipy` packages, arrays enable fast matrix operations, including matrix multiplication, filtering, thresholding, deconvolution, etc. Check out the [documentation](https://numpy.org/doc/stable/reference/arrays.html) if you want to learn more.
 
-- **pandas DataFrame (`pandas.DataFrame`):** 
+- **pandas DataFrame (`pandas.DataFrame`):** a 2-dimensional table of heterogeneous data. Requires `pandas`. DataFrames act like spreadsheets, with columns of data labeled by headers. We can perform operations to generate new rows and columns, similar to what we might do using Excel. DataFrames are a convenient way to organize large tables for manipulating data, plotting, and outputting to files. [Here](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm) is a tutorial on how to get started using this data structure.
 
 - **BioPython Seq (`Bio.Seq`):**
