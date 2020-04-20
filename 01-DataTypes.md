@@ -23,7 +23,7 @@ we want to make a new variable `num` to hold the
 integer number 5, we would write
 
 ```c++
-int num = 5;
+int num = 5;  // c++
 ```
 
 In C++, we have to tell the compiler what type the 
