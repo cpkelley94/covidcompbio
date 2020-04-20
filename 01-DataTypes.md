@@ -144,15 +144,22 @@ go over when they are best to use.
 - **Tuple (`tuple`):** an _immutable_ ordered collection of items. Tuples function similarly to lists, except once declared, the items of a tuple can't be changed. Many functions return tuples in order to return multiple values at the same time: for example, the curve-fitting function `scipy.optimize.curve_fit()` returns the tuple `(popt, pcov)` to provide both the fitting parameters and their covariance matrix.
   - Example declaration: `my_tup = (1, 2, 3)` (enclose the list in _parentheses_, and separate items with a comma)
     - In many cases, the parentheses are actually optional. For example, when using the iterator `enumerate()` to iterate over a list's indices and items together, we often write this as
+      ```python
+      for i, item in enumerate(my_list):
+          # do some stuff with index 'i' and item
+      ```
+      Here, `i, item` is actually a tuple, and the parentheses are omitted.
+
+- **Set (`set`):** an _unordered_ collection of unique items. Sets maintain information about which elements are in the set, but not where they are relative to each other. Additionally, sets can only hold one of each object (eg. there cannot be two 7s in a set). Sets are much more time-efficient than lists when all we need to know is whether an element is part of the set or not.
+  - Example declaration: `my_set = set([1, 2, 3])`
+    - Here, you can see that Python has not implemented a syntax for creating sets directly. Rather, sets are created by using the **constructor** `set()` on another iterable type, like a list or a tuple.
+  - We can take advantage of the uniqueness requirement of sets to remove duplicate items from lists. For example, consider a list `my_list` that contains the numbers `[0, 0, 1, 1, 2]`. If we want to get a new list that contains all the unique elements of `my_list`, we can cast the list to a set, and then cast it back to a list:
     ```python
-    for i, item in enumerate(my_list):
-        # do some stuff with index 'i' and item
+    unique_list = list(set(my_list))  # this list now contains 0, 1, and 2 only
     ```
-    Here, `i, item` is actually a tuple, and the parentheses are omitted.
+    However, because sets are an unordered type, this will scramble the order of the items. If we need to, we can use the `sorted()` function to put them back in order.
 
-- **Set (`set`):**
-
-- **Dictionary (`dict`):**
+- **Dictionary (`dict`):** 
 
 - **NoneType (`NoneType`):**
 
