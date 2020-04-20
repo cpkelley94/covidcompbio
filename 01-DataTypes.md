@@ -143,6 +143,12 @@ go over when they are best to use.
 
 - **Tuple (`tuple`):** an _immutable_ ordered collection of items. Tuples function similarly to lists, except once declared, the items of a tuple can't be changed. Many functions return tuples in order to return multiple values at the same time: for example, the curve-fitting function `scipy.optimize.curve_fit()` returns the tuple `(popt, pcov)` to provide both the fitting parameters and their covariance matrix.
   - Example declaration: `my_tup = (1, 2, 3)` (enclose the list in _parentheses_, and separate items with a comma)
+    - In many cases, the parentheses are actually optional. For example, when using the iterator `enumerate()` to iterate over a list's indices and items together, we often write this as
+    ```python
+    for i, item in enumerate(my_list):
+        # do some stuff with index 'i' and item
+    ```
+    Here, `i, item` is actually a tuple, and the parentheses are omitted.
 
 - **Set (`set`):**
 
