@@ -178,7 +178,7 @@ go over when they are best to use.
   - We can check if a variable `var` is `None` using `if var is None`.
 
 ### External data types
-While Python provides many broadly useful types (including some not mentioned above), certain analyses require specially designed data types, providing additional functionality or streamlining efficiency of data processing. Here, we've provided just a few of the many useful data types provided in external Python packages.
+While Python provides many broadly useful types (including some not mentioned above), certain analyses require specially designed data types, providing additional functionality or streamlining efficiency of data processing. Here, we describe just a few of the many useful data types provided in external Python packages.
 
 - **NumPy array (`numpy.ndarray`):** an ordered n-dimensional array of values with the same type. Requires `numpy`.
 
