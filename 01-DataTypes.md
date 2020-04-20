@@ -121,7 +121,7 @@ go over when they are best to use.
   - Characters in a string can be retrieved with an index (eg. `my_string[0]` returns the first character in the string).
   - Substrings can be retrieved by _slicing_ (eg. `my_string[0:3]` returns the first three characters in the string).
   - Strings can be _concatenated_ by adding them (eg. `'a' + 'b'` returns `'ab'`).
-  - In Python, strings are _immutable_ objects, meaning that they cannot be changed once they are created. This means that if we try to change the value of a character in a string by indexing (eg. `my_string[0] = "A"`), Python will throw an error. We can often get around this, however, by redefining an existing string variable with a new string (eg. to change the first letter of `my_string` to A, we can write `my_string = "A" + mystring[1:]`.
+  - In Python, strings are _immutable_ objects, meaning that they cannot be changed once they are created. This means that if we try to change the value of a character in a string by indexing (eg. `my_string[0] = "A"`), Python will throw an error. We can often get around this, however, by redefining an existing string variable with a new string (eg. to change the first letter of `my_string` to A, we can write `my_string = "A" + mystring[1:]`).
  
   
 - **List (`list`):** an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`).
