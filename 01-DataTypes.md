@@ -150,7 +150,7 @@ go over when they are best to use.
       ```
       Here, `i, item` is actually a tuple, and the parentheses are omitted.
 
-- **Set (`set`):** an _unordered_ collection of unique items. Sets maintain information about which elements are in the set, but not where they are relative to each other. Additionally, sets can only hold one of each object (eg. there cannot be two 7s in a set). Sets are much more time-efficient than lists when all we need to know is whether an element is part of the set or not.
+- **Set (`set`):** an _unordered_ collection of unique items. Sets maintain information about which elements are in the set, but not where they are relative to each other. Additionally, sets can only hold one of each object (eg. there cannot be two 7s in a set). Sets are much more time-efficient than lists when all we need to know is whether an element is part of the set or not. Sets also enable set arithmetic, such as unions and intersections.
   - Example declaration: `my_set = set([1, 2, 3])`
     - Here, you can see that Python has not implemented a syntax for creating sets directly. Rather, sets are created by using the **constructor** `set()` on another iterable type, like a list or a tuple.
   - We can take advantage of the uniqueness requirement of sets to remove duplicate items from lists. For example, consider a list `my_list` that contains the numbers `[0, 0, 1, 1, 2]`. If we want to get a new list that contains all the unique elements of `my_list`, we can cast the list to a set, and then cast it back to a list:
@@ -159,8 +159,20 @@ go over when they are best to use.
     ```
     However, because sets are an unordered type, this will scramble the order of the items. If we need to, we can use the `sorted()` function to put them back in order.
 
-- **Dictionary (`dict`):** 
-
+- **Dictionary (`dict`):** an unordered collection of items accessed using keys. Like lists, dictionaries can hold any number of values of any type. However, rather than being indexed using integers, dictionaries are indexed by _keys_, which can be any immutable type (eg. integers, floats, strings, and tuples). Strings are often used as keys. For example, if I wanted to store information about the colors of all the objects in my kitchen, I could make a dictionary called `kitchen_colors`:
+  ```python
+  kitchen_colors = {'spatula':'black', 'sink':'silver', 'refrigerator':'grey', ... }
+  ```
+  If I wanted to get the color of my spatula, I would look it up in the dictionary using the appropriate key:
+  ```python
+  color = kitchen_colors['spatula']  # 'black'
+  ```
+  Dictionaries are a highly flexible way to store heterogenous data for quick access. However, they do not store any information about order.
+  - Example declaration: `my_dict = {"fruit":"strawberry", "color":"red", "flavor":"sweet", "count":56}
+  - Dictionaries are organized as key-value pairs, where the key is used to look up the value. You can think of this as similar to a real-world dictionary, where the word is the key and the definition is the value.
+  - In Python, dictionary values can be any type, including lists and dictionaries!
+  - If we want to iterate over a dictionary, we can do it in multiple ways. We can iterate over its keys using the `.keys()` method, its values using `.values()`, or its key-value pairs (as a tuple) using `.items()`. Keep in mind that these aren't going to be in any particular order.
+  
 - **NoneType (`NoneType`):**
 
 ### External data types
