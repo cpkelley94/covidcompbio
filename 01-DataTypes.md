@@ -123,13 +123,12 @@ go over when they are best to use.
   - Strings can be _concatenated_ by adding them (eg. `'a' + 'b'` returns `'ab'`).
   - In Python, strings are _immutable_ objects, meaning that they cannot be changed once they are created. This means that if we try to change the value of a character in a string by indexing (eg. `my_string[0] = "A"`), Python will throw an error. We can often get around this, however, by redefining an existing string variable with new data. For example, to change the first letter of `my_string` to A, we can write `my_string = "A" + mystring[1:]`.
   
-- **List (`list`):** an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`). Lists are a very convenient data type to store ordered sequences, such as the lines in a text file, sequencing reads (as strings), gene names, measurements, read counts, RGB color values&mdash;pretty much anything you can think of! Items in a list don't even have to be the same type. Lists are the fundamental _iterable_ type in Python, meaning we can run through each of its items with a `for` loop and perform some operations on each item in sequence. However, with this convenience comes relative inefficiency in both memory usage and time: for processing large and/or multidimensional data, like 3D microscopy images or large sequencing datasets, lists often don't make the cut.
+- **List (`list`):** an ordered collection of items of any type (eg. `[0, 1, 2, 3]`, `[0, 1.0, "red", True]`). Lists are a very convenient data type to store ordered sequences, such as the lines in a text file, sequencing reads, gene names, measurements, read counts, RGB color values&mdash;pretty much anything you can think of! Items in a list don't even have to be the same type. Lists are the fundamental _iterable_ type in Python, meaning we can run through each of its items with a `for` loop and perform some operations on each item in sequence. However, with this convenience comes relative inefficiency in both memory usage and time: for processing large and/or multidimensional data, like 3D microscopy images or large sequencing datasets, lists often don't make the cut.
   - Example declaration: `my_list = [0, 1, 2, 3]` (enclose the list in square brackets, and separate items with a comma)
   - Lists can be _indexed_, _sliced_, and _concatenated_ just like strings, with exactly the same syntax.
-  - Additionally, unlike strings, lists are _mutable_, meaning we can change the items whenever we want. For example, I can change the first element of `my_list` to 
+  - Additionally, unlike strings, lists are _mutable_, meaning we can change the items whenever we want. For example, I can change the first element of `my_list` to 5 by indexing (eg. `my_list[0] = 5`).
+  - We can also change the length of the list at any time. We can add an element to the end using the `.append()` method (eg. `my_list.append("a new value")`, insert an element at any position using `.insert()`, and remove an element using `.pop()` or `.remove()`.
   - List comprehension:
-  - mutable
-  - append, insert, extend
   
   
 
