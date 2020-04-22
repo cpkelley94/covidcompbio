@@ -14,6 +14,7 @@
 - `ctrl-v` highlight single character (visual block)
   - use `j`, `k`, arrow keys to highlight more
   - use `d` to cut
+  - use `y` to yank (copy)
   - use `x` to delete
   - use `p` to paste
 - `dd` delete/cut a whole line
