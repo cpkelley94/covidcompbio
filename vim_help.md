@@ -18,7 +18,7 @@
   - use `p` to paste
 - `dd` delete/cut a whole line
   - `p` paste this line that we deleted
-- `yy` "yank" (copy) a whole line for pasting with `p`
+- `yy` yank (copy) a whole line for pasting with `p`
 
 ## text insertion mode
 - `i` start text insersion
