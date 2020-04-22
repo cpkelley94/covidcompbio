@@ -22,10 +22,10 @@
 - `yy` yank (copy) a whole line for pasting with `p`
 
 ## text insertion mode
-- `i` start text insersion
-- `a` start appending text
-- `shift-i` insert text across multiple lines 
-- `shift-a` append text across multiple lines
+- `i` start text insertion, insert text before the cursor
+- `a` start text insertion, append text after the cursor
+- `shift-i` start text insertion, insert text at the beginning of the line 
+- `shift-a` start text insertion, append text at the end of the line
 - `esc` exit text insertion mode
 
 ## find and replace
