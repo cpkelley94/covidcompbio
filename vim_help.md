@@ -12,7 +12,7 @@
 ## clipboard commands
 - `shift-v` highlight whole line (visual block)
 - `ctrl-v` highlight single character (visual block)
-  - use `j` and `k` to highlight more
+  - use `j`, `k`, arrow keys to highlight more
   - use `d` to cut
   - use `x` to delete
   - use `p` to paste
