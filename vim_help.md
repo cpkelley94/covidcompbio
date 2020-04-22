@@ -24,6 +24,9 @@
 - `shift-g` to end of file
 
 ## colon commands
-- `:s/<find>/<replace>/g` - find and replace on this line
+- `:w` save the file
+- `:wq` save the file and exit
+- `:q!` exit without saving changes
+- `:s/<find>/<replace>/g` find and replace on this line
   - add `%` after the colon to replace on all lines
-- `:<line number>` - go to line number
+- `:<line number>` go to line number
