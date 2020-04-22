@@ -10,8 +10,8 @@
 - `:<line number>` go to line number
 
 ## clipboard commands
-- `shift-v` highlight whole line (visual block)
-- `ctrl-v` highlight single character (visual block)
+- `shift-v` highlight whole line (start a visual block)
+- `ctrl-v` highlight single character, column-wise (start a visual block)
   - use `j`, `k`, arrow keys to highlight more
   - use `d` to cut
   - use `y` to yank (copy)
