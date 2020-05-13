@@ -152,7 +152,7 @@ go over when they are best to use.
 
 - **Set (`set`):** an _unordered_ collection of unique items. Sets maintain information about which elements are in the set, but not where they are relative to each other. Additionally, sets can only hold one of each object (eg. there cannot be two 7s in a set). Sets are much more time-efficient than lists when all we need to know is whether an element is part of the set or not. Sets also enable set arithmetic, such as unions and intersections.
   - Example declaration: `my_set = set([1, 2, 3])`
-    - Here, we see that Python has not implemented a syntax for creating sets directly. Rather, sets are created by using the **constructor** `set()` on another iterable type, like a list or a tuple.
+    - Here, we see that we can create a set by using the **constructor** `set()` on another iterable type, like a list or a tuple.
   - We can take advantage of the uniqueness requirement of sets to remove duplicate items from lists. For example, consider a list `my_list` that contains the numbers `[0, 0, 1, 1, 2]`. If we want to get a new list that contains all the unique elements of `my_list`, we can cast the list to a set, and then cast it back to a list:
     ```python
     unique_list = list(set(my_list))  # this list now contains 0, 1, and 2 only
